@@ -15,7 +15,7 @@ const From = () => {
         email:data.email,
         hobbies:data.hobbies
        }
-       fetch(`http://localhost:5000/userdata`, {
+       fetch(`https://servertask.vercel.app/userdata`, {
 			method:'POST',
 			headers:{
 				'content-type':'application/json'

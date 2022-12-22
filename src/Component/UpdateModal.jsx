@@ -14,7 +14,7 @@ const UpdateModal = ({storeData,refetch}) => {
           email:data.email,
           hobbies:data.hobbies
          }
-         fetch(`http://localhost:5000/users/${storeData._id}`,{
+         fetch(`https://servertask.vercel.app/users/${storeData._id}`,{
           method:'PUT',
           headers:{
             'content-type':'application/json'

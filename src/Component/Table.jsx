@@ -10,13 +10,13 @@ const Table = () => {
   const {data:userInfo,refetch}=useQuery({
     queryKey:['userFrom'],
     queryFn:async ()=>{
-      const res = await fetch('http://localhost:5000/userInfo')
+      const res = await fetch('https://servertask.vercel.app/userInfo')
       const data = await res.json()
       return data;
     }
   })
   const handelDeleteData=(id)=>{
-    fetch(`http://localhost:5000/userInfo/${id}`,{
+    fetch(`https://servertask.vercel.app/userInfo/${id}`,{
       method:'DELETE'
     })
     .then(res=>res.json())
