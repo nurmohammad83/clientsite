@@ -26,8 +26,8 @@ const From = () => {
         .then(res=>res.json())
 		.then(data=>{
 			if(data.acknowledged){
-				toast('Add Information')
-                navigate('/')
+				toast('Add Successfully')
+                navigate('/table')
 			};
 		})
       };

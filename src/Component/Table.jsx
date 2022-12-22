@@ -43,7 +43,7 @@ const Table = () => {
             <th>Phone</th> 
             <th>Email</th> 
             <th>Hobbies</th> 
-            <th>Update</th>
+            <th>Update/Delete</th>
           </tr>
         </thead> 
         <tbody>
